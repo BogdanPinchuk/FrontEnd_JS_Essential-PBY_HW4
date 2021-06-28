@@ -7,6 +7,9 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log("Випадкові значення:");
+// варіант 1 виведення
+console.log(array);
+// варіант 2 виведення
 for (const i of array) {
     console.log(i);
 }
