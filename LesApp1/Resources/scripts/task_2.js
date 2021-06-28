@@ -1,13 +1,3 @@
-// підключаємо івент натискання клавіші
-// addEventListener("keydown", func);
-
-// функція обробки клавіші
-// func(event){
-//     if (event.defaultPrevented) {
-//         return;
-//     }
-// }
-
 // В даному випадку необхідно використати цикл Дейкстри
 let value = null;
 
@@ -29,7 +19,7 @@ while (true) {
 
     if (input != null) {
         let value = Number(input);
-        
+
         if (isNaN(value) || value <= 10) {
             alert("Ошибка ввода!\nСпробуйте еще раз.");
             continue;
@@ -39,7 +29,7 @@ while (true) {
             if (confirm("Хотите спробовать еще раз?") == true) {
                 continue;
             }
-            else{
+            else {
                 break;
             }
         }
