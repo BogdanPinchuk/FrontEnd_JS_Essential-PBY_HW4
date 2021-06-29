@@ -4,21 +4,41 @@ console.log(`Дані: ${values}`);
 // мінімальне значення
 let min = values[0];
 
+// варіант 1
+for (const value of values) {
+    if (min > value) {
+        min = value;
+    }
+}
+
+// варіант 2
+/*
 for (let i = 1; i < values.length; i++) {
     if (min > values[i]) {
         min = values[i];
     }
 }
+*/
 console.log(`Мінімальне значення ${min};`);
 
 // максимальне значення
 let max = values[0];
 
+// варіант 1
+for (const value of values) {
+    if (max < value) {
+        max = value;
+    }
+}
+
+// варіант 2
+/*
 for (let i = 1; i < values.length; i++) {
     if (max < values[i]) {
         max = values[i];
     }
 }
+*/
 console.log(`Максимальне значення ${max};`);
 
 // сума
